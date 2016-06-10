@@ -1,5 +1,8 @@
+src/static/built
 packages/
 node_modules/
 .DS_Store
 *.py.swp
 *.pyc
+src/static/bower_components/
+src/static/.webassets-cache/

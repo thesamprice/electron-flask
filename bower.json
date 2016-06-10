@@ -1,0 +1,19 @@
+{
+  "name": "electron-flask",
+  "version": "0.0.1",
+  "homepage": "https://github.com/richlewis42/electron-flask",
+  "authors": [
+    "noone"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

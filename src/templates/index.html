@@ -3,6 +3,11 @@
   <style>
   * { font-family: Helvetica, sans-serif;}
   </style>
+
+  {% assets "css_all" %}
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
+  {% endassets %}
+
   <script>
     function load () {
 	function reqListener () {
@@ -10,14 +15,20 @@
       }
       xhttp = new XMLHttpRequest();
       xhttp.addEventListener("load", reqListener);
-      xhttp.open('GET', 'http://localhost:5000');
+      xhttp.open('GET', 'http://localhost:5000/HelloWorld');
       xhttp.send();
     }
   </script>
+
 </head>
 
 <body>
   <h1>Electron-Flask test!!</h1>
   <button onclick="load()">Access the API</button>
   <p id="dynamic"></p>
+
+  {% assets "js_all" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+  {% endassets %}
+
 </body>
